@@ -1,0 +1,97 @@
+# Expresiones Regulares
+
+**Ejercicio 1**
+Encontrar todas las apariciones de la palabra **error** sin importar mayúsculas o minúsculas.
+**Regex:**
+
+`Error|error|ERROR`
+
+**Ejercicio 2**
+Extraer todas las **direcciones IP** del log.
+**Regex:**
+
+`\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}`
+
+**Ejercicio 3**
+Validar **direcciones de correo electrónico**.
+**Regex:**
+
+`\w+@\w+\.\w{2,3}`
+
+**Ejercicio 4**
+Validar fechas con formato **DD-MM-YYYY**.
+**Regex:**
+
+`\d{2}-\d{2}-\d{4}`
+
+**Ejercicio 5**
+Detectar **URLs**.
+**Regex:**
+
+`https?:\/\/\w+\.\w+`
+
+**Ejercicio 6**
+Extraer **números de teléfono**.
+**Regex:**
+
+`\d{3}-\d{3}-\d{3}|\d{9}|\(\d{2}\)\s\d{3}\s\d{4}`
+
+**Ejercicio 7**
+Detectar **contraseñas o claves** después de las palabras *password*, *clave* o *pwd*.
+**Regex:**
+
+`(?<=password:|clave:|pwd:)\s*[^\s,]+`
+
+**Ejercicio 8**
+Detectar **errores HTTP 4xx y 5xx**.
+**Regex:**
+
+`\b[45]\d{2}\b`
+
+**Ejercicio 9**
+Detectar contenido entre **etiquetas HTML**.
+**Regex:**
+
+`<\w+>(.*?)</\w+>`
+
+**Ejercicio 10**
+Extraer **nombres de usuario** en logs.
+**Regex:**
+
+`user=\w+`
+
+**Ejercicio 11**
+Extraer **métodos HTTP**.
+**Regex:**
+
+`(GET|POST|DELETE)`
+
+**Ejercicio 12**
+Encontrar **números de puerto válidos**.
+**Regex:**
+
+`\d{1,5}`
+
+**Ejercicio 13**
+Detectar correos con dominio **.local**.
+**Regex:**
+
+`\w+@\w+\.local`
+
+**Ejercicio 14**
+Detectar comandos **sudo** o **ping**.
+**Regex:**
+
+`(sudo|ping)`
+
+**Ejercicio 15**
+Detectar líneas con **denied** o **failed**.
+**Regex:**
+
+`denied|failed`
+
+**Ejercicio 16**
+Detectar archivos **.exe, .bat o .sh**.
+**Regex:**
+
+`\w+\.(exe|bat|sh)`

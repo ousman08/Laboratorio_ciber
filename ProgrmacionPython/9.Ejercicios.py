@@ -27,7 +27,7 @@ except FileNotFoundError:
     #Mensaje si el archivo no existe
     print("Error: No existe.")
     
-except exception as e:
+except Exception as e:
     #captura cualquier otro error
     print(f"Error inesperado: {e}")
     
